@@ -37,7 +37,7 @@ const CheckoutPage = () => {
         };
 
         try {
-            const res = await fetch('http://localhost:5000/api/orders', {
+            const res = await fetch('https://ecommerce-api-f4f2.onrender.com/orders', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

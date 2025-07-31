@@ -13,7 +13,7 @@ const MyOrdersPage = () => {
             try {
                 if (!user) return;
 
-                const res = await axios.get('http://localhost:5000/api/orders/myorders', {
+                const res = await axios.get('https://ecommerce-api-f4f2.onrender.com/orders/myorders', {
                     headers: {
                         Authorization: `Bearer ${user.token}`,
                     },
